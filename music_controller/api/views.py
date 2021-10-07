@@ -1,7 +1,7 @@
 from django.shortcuts import render
 # from django.http import HttpResponse
 from rest_framework import generic
-from models import Room
+from .models import Room
 from .serializers import RoomSerializer
 
 # Create your views here.
