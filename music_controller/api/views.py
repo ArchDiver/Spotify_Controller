@@ -7,6 +7,7 @@ from .serializers import RoomSerializer
 # Create your views here.
 # def main(request):
 #     return HttpResponse("<h1>Hello")
-class RoomView(generics.CreateAPIView):
+class RoomView(generics.ListAPIView):
     queryset = Room.objects.all()
     serializer_class = RoomSerializer
+    
