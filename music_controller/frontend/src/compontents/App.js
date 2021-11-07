@@ -7,7 +7,11 @@ export default class App extends Component {
     }
 
     render() {
-        return (<h1> Testing React Code </h1>)
+        return (
+            <div>
+                <h1> Testing React Code </h1> 
+            </div>
+        )
     }
 }
 
