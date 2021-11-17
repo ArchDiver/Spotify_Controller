@@ -7,7 +7,7 @@ export default class App extends Component {
     }
 
     render() {
-        return <h1>this.props.name</h1>;
+        return <h1>{this.props.name}</h1>;
         // return (
         //     <div>
         //         <h1> Testing React Code </h1> 
