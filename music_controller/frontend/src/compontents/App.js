@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {render} from "react-dom";
+import HomePage from "./HomePage"
 
 export default class App extends Component {
     constructor(props) {
@@ -7,14 +8,13 @@ export default class App extends Component {
     }
 
     render() {
-        return <h1>{this.props.name}</h1>;
-        // return (
-        //     <div>
-        //         <h1> Testing React Code </h1> 
-        //     </div>
-        // )
+        return (
+            <div>
+                <HomePage /> 
+            </div>
+        )
     }
 }
 
 const appDiv = document.getElementsByTagId("app");
-render(<App name="tim" />, appDiv);
+render(<App />, appDiv);
